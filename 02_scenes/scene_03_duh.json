@@ -1,0 +1,9 @@
+{
+    "id": "scene_03_duh",
+    "title": "Земляника и дух места",
+    "text_file_ru": "01_text/ru_03_duh.txt",
+    "text_file_sah": "01_text/sah_03_duh.txt",
+    "prompt_file": "03_prompts/prompt_03_duh.txt",
+"image_file": "04_images/03_duh.png",
+    "description": "Дети собирают землянику, видят странную одежду на изгороди. Атмосфера тревоги, ощущение духа места."
+}

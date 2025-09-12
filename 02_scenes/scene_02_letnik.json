@@ -1,0 +1,9 @@
+{
+    "id": "scene_02_letnik",
+    "title": "Летник",
+    "text_file_ru": "01_text/ru_02_letnik.txt",
+    "text_file_sah": "01_text/sah_02_letnik.txt",
+    "prompt_file": "03_prompts/prompt_02_letnik.txt",
+"image_file": "04_images/02_letnik.png",
+    "description": "Летний день, возле хлева дети и мать. Лошадь председателя, над ней проплывает женская голова в платке. Атмосфера тревожная, сверхъестественная, якутская деревня."
+}
