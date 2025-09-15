@@ -1,11 +1,5 @@
-# Игнорируем временные файлы Windows и Python
-Thumbs.db
-Desktop.ini
-*.log
+*.bat~
 *.tmp
-
-# Игнорируем бэкапы
-MultBook_backup/
-
-# Игнорируем BAT-скрипты, если не нужны в репозитории
-*.bat
+*.log
+*.bak
+*.zip
