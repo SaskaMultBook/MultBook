@@ -1,15 +1,18 @@
 @echo off
-setlocal enabledelayedexpansion
 title Backup MultBook
+cd /d "%~dp0"
+cd ..
 
-set "BACKUP_DIR=%~dp0MultBook_backup"
+set "SOURCE_DIR=%cd%"
+set "BACKUP_DIR=%SOURCE_DIR%\MultBook_backup"
+
 if not exist "%BACKUP_DIR%" mkdir "%BACKUP_DIR%"
 
 for /f %%T in ('powershell -NoP -C "(Get-Date).ToString(\"yyyy-MM-dd_HH-mm-ss\")"') do set DATETIME=%%T
-set "ZIP_FILE=%BACKUP_DIR%\MultBook_!DATETIME!.zip"
+set "ZIP_FILE=%BACKUP_DIR%\MultBook_%DATETIME%.zip"
 
-echo [*] Создание временного архива...
-tar -a -c -f "!ZIP_FILE!" *
+echo [*] Создаю резервную копию: "%ZIP_FILE%"
+tar -a -c -f "%ZIP_FILE%" MultBook
 
-echo [OK] Backup готов: "!ZIP_FILE!"
+echo [OK] Бэкап готов: "%ZIP_FILE%"
 pause
